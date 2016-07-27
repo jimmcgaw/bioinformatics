@@ -36,8 +36,8 @@ or
 
 ``` let seq = new Sequence('ATTGCC', DNAAlphabet);  // DNAAlphabet is the default if not specified ```
 
-``` seq.complement();
-  => 'TAACGG' ```
+``` seq.complement(); ```
+```  => 'TAACGG' ```
 
 The central dogma of molecular biology is that DNA goes to RNA goes to protein. You are a eukaryotic organism,
 so your DNA exists in the nucleus of the cells in your body. In order to make a protein that becomes a piece of
