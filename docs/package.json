@@ -1,0 +1,25 @@
+{
+  "name": "bioinformatics",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docgen": "node_modules/.bin/esdoc -c esdoc.json",
+    "docs": "open docs/index.html",
+    "compile": "node_modules/.bin/babel --presets es2015 src/ -d dist/",
+    "prepublish": "npm run compile",
+    "test": "node_modules/.bin/mocha --compilers js:babel-core/register tests/**/*.test.js",
+    "nyan": "node_modules/.bin/mocha --compilers js:babel-core/register --reporter=nyan tests/**/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "chai": "^3.5.0",
+    "esdoc": "^0.4.7",
+    "mocha": "^2.5.3"
+  }
+}
