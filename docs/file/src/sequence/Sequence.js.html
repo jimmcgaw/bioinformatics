@@ -32,7 +32,8 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">alphabet</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/alphabet/DNAAlphabet.js~DNAAlphabet.html">DNAAlphabet</a></span></span></li>
+  <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">alignment</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/alignment/SequenceAligner.js~SequenceAligner.html">SequenceAligner</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">alphabet</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/alphabet/DNAAlphabet.js~DNAAlphabet.html">DNAAlphabet</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/alphabet/RNAAlphabet.js~RNAAlphabet.html">RNAAlphabet</a></span></span></li>
 <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">sequence</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/sequence/Sequence.js~Sequence.html">Sequence</a></span></span></li>
 </ul>
@@ -89,7 +90,10 @@ class Sequence {
   }
 
   complement(){
-    return &apos;&apos;;
+    let complementHash = this.alphabet.getComplementHash();
+    return this.characters.map(character =&gt; {
+      return complementHash[character];
+    }).join(&apos;&apos;);
   }
 
   /**
@@ -100,7 +104,6 @@ class Sequence {
       throw new TypeError(&apos;Cannot transcribe non-DNA sequence. (Perhaps you want retrotranscribe?)&apos;);
     }
     let transcribedSequence = this.sequence.replace(/T/g, &apos;U&apos;);
-    console.log(transcribedSequence)
     return new Sequence(transcribedSequence, RNAAlphabet);
   }
 

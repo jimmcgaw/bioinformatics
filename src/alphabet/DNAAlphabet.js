@@ -13,6 +13,15 @@ class DNAAlphabet extends Alphabet {
   getCharacters(){
     return this.characters;
   }
+
+  getComplementHash(){
+    return {
+      'A': 'T',
+      'T': 'A',
+      'C': 'G',
+      'G': 'C'
+    }
+  }
 }
 
 export default DNAAlphabet;

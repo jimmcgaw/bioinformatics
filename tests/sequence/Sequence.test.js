@@ -42,6 +42,18 @@ describe('Sequence', function() {
         }).to.throw(/Cannot transcribe non-RNA sequence. \(Perhaps you want transcribe\?\)/);
       });
     });
+
+    describe('#complement', function() {
+      it('returns the nucleotides of the complement strand', function () {
+        let alphabet = new DNAAlphabet();
+        let complementHash = alphabet.getComplementHash();
+        let expectedComplement = dnaSequenceCharacters.split('').map(character => {
+          return complementHash[character];
+        }).join('');
+        let complement = sequence.complement();
+        expect(complement).to.equal(expectedComplement);
+      });
+    });
   });
 
 
@@ -84,6 +96,18 @@ describe('Sequence', function() {
       it('returns the retrotranscribed string', function () {
         let retrotranscribed = sequence.retrotranscribe();
         expect(retrotranscribed.sequence).to.equal(rnaSequenceCharacters.replace(/U/g, 'T'));
+      });
+    });
+
+    describe('#complement', function() {
+      it('returns the nucleotides of the complement strand', function () {
+        let alphabet = new RNAAlphabet();
+        let complementHash = alphabet.getComplementHash();
+        let expectedComplement = rnaSequenceCharacters.split('').map(character => {
+          return complementHash[character];
+        }).join('');
+        let complement = sequence.complement();
+        expect(complement).to.equal(expectedComplement);
       });
     });
   });

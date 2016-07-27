@@ -32,7 +32,8 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">alphabet</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/alphabet/DNAAlphabet.js~DNAAlphabet.html">DNAAlphabet</a></span></span></li>
+  <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">alignment</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/alignment/SequenceAligner.js~SequenceAligner.html">SequenceAligner</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">alphabet</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/alphabet/DNAAlphabet.js~DNAAlphabet.html">DNAAlphabet</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/alphabet/RNAAlphabet.js~RNAAlphabet.html">RNAAlphabet</a></span></span></li>
 <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">sequence</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/sequence/Sequence.js~Sequence.html">Sequence</a></span></span></li>
 </ul>
@@ -55,6 +56,15 @@ class RNAAlphabet extends Alphabet {
 
   getCharacters(){
     return this.characters;
+  }
+
+  getComplementHash(){
+    return {
+      &apos;A&apos;: &apos;U&apos;,
+      &apos;U&apos;: &apos;A&apos;,
+      &apos;C&apos;: &apos;G&apos;,
+      &apos;G&apos;: &apos;C&apos;
+    }
   }
 }
 

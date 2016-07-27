@@ -14,6 +14,15 @@ class RNAAlphabet extends Alphabet {
   getCharacters(){
     return this.characters;
   }
+
+  getComplementHash(){
+    return {
+      'A': 'U',
+      'U': 'A',
+      'C': 'G',
+      'G': 'C'
+    }
+  }
 }
 
 export default RNAAlphabet;

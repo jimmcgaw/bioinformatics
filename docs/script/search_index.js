@@ -18,6 +18,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "bioinformatics/src/alignment/sequencealigner.js~sequencealigner",
+    "class/src/alignment/SequenceAligner.js~SequenceAligner.html",
+    "<span>SequenceAligner</span> <span class=\"search-result-import-path\">bioinformatics/src/alignment/SequenceAligner.js</span>",
+    "class"
+  ],
+  [
     "builtinexternal/ecmascriptexternal.js~array",
     "external/index.html",
     "BuiltinExternal/ECMAScriptExternal.js~Array",
@@ -348,6 +354,42 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
+    "src/alignment/sequencealigner.js",
+    "file/src/alignment/SequenceAligner.js.html",
+    "src/alignment/SequenceAligner.js",
+    "file"
+  ],
+  [
+    "src/alignment/sequencealigner.js~sequencealigner#constructor",
+    "class/src/alignment/SequenceAligner.js~SequenceAligner.html#instance-constructor-constructor",
+    "src/alignment/SequenceAligner.js~SequenceAligner#constructor",
+    "method"
+  ],
+  [
+    "src/alignment/sequencealigner.js~sequencealigner#inittable",
+    "class/src/alignment/SequenceAligner.js~SequenceAligner.html#instance-method-initTable",
+    "src/alignment/SequenceAligner.js~SequenceAligner#initTable",
+    "method"
+  ],
+  [
+    "src/alignment/sequencealigner.js~sequencealigner#seq1",
+    "class/src/alignment/SequenceAligner.js~SequenceAligner.html#instance-member-seq1",
+    "src/alignment/SequenceAligner.js~SequenceAligner#seq1",
+    "member"
+  ],
+  [
+    "src/alignment/sequencealigner.js~sequencealigner#seq2",
+    "class/src/alignment/SequenceAligner.js~SequenceAligner.html#instance-member-seq2",
+    "src/alignment/SequenceAligner.js~SequenceAligner#seq2",
+    "member"
+  ],
+  [
+    "src/alignment/sequencealigner.js~sequencealigner#table",
+    "class/src/alignment/SequenceAligner.js~SequenceAligner.html#instance-member-table",
+    "src/alignment/SequenceAligner.js~SequenceAligner#table",
+    "member"
+  ],
+  [
     "src/alphabet/dnaalphabet.js",
     "file/src/alphabet/DNAAlphabet.js.html",
     "src/alphabet/DNAAlphabet.js",
@@ -369,6 +411,12 @@ window.esdocSearchIndex = [
     "src/alphabet/dnaalphabet.js~dnaalphabet#getcharacters",
     "class/src/alphabet/DNAAlphabet.js~DNAAlphabet.html#instance-method-getCharacters",
     "src/alphabet/DNAAlphabet.js~DNAAlphabet#getCharacters",
+    "method"
+  ],
+  [
+    "src/alphabet/dnaalphabet.js~dnaalphabet#getcomplementhash",
+    "class/src/alphabet/DNAAlphabet.js~DNAAlphabet.html#instance-method-getComplementHash",
+    "src/alphabet/DNAAlphabet.js~DNAAlphabet#getComplementHash",
     "method"
   ],
   [
@@ -399,6 +447,12 @@ window.esdocSearchIndex = [
     "src/alphabet/rnaalphabet.js~rnaalphabet#getcharacters",
     "class/src/alphabet/RNAAlphabet.js~RNAAlphabet.html#instance-method-getCharacters",
     "src/alphabet/RNAAlphabet.js~RNAAlphabet#getCharacters",
+    "method"
+  ],
+  [
+    "src/alphabet/rnaalphabet.js~rnaalphabet#getcomplementhash",
+    "class/src/alphabet/RNAAlphabet.js~RNAAlphabet.html#instance-method-getComplementHash",
+    "src/alphabet/RNAAlphabet.js~RNAAlphabet#getComplementHash",
     "method"
   ],
   [

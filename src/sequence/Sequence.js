@@ -47,7 +47,10 @@ class Sequence {
   }
 
   complement(){
-    return '';
+    let complementHash = this.alphabet.getComplementHash();
+    return this.characters.map(character => {
+      return complementHash[character];
+    }).join('');
   }
 
   /**
@@ -58,7 +61,6 @@ class Sequence {
       throw new TypeError('Cannot transcribe non-DNA sequence. (Perhaps you want retrotranscribe?)');
     }
     let transcribedSequence = this.sequence.replace(/T/g, 'U');
-    console.log(transcribedSequence)
     return new Sequence(transcribedSequence, RNAAlphabet);
   }
 

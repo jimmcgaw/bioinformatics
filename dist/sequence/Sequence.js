@@ -18,27 +18,43 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+/**
+ * Sequence: a string of characters representing a sequence of nucleotides
+ * Usage: let sequence = new Sequence('ACCTGG', DNAAlphabet);
+ *        let transcribed = sequence.transcribe();
+ *        transcribed.sequence;
+ *          => 'ACCUGG'
+ *        transcribed.getAlphabet();
+            => 'ACGU'  // now an RNA strand
+ *
+ */
 var Sequence = function () {
   function Sequence(sequenceCharacters, alphabetClass) {
     _classCallCheck(this, Sequence);
 
-    this.setAlphabet(alphabetClass);
+    this._setAlphabet(alphabetClass);
     this.sequence = sequenceCharacters.toUpperCase();
     this.characters = this.sequence.split('');
-    this.checkCharacters();
+    this._checkCharacters();
   }
 
+  /**
+   * @param {alphabetClass} Name of Alphabet subclass. One of [DNAAlphabet, RNAAlphabet]
+   * @return {void}
+   */
+
+
   _createClass(Sequence, [{
-    key: 'setAlphabet',
-    value: function setAlphabet(alphabetClass) {
+    key: '_setAlphabet',
+    value: function _setAlphabet(alphabetClass) {
       if (typeof alphabetClass === 'undefined') {
         alphabetClass = _DNAAlphabet2.default;
       }
       this.alphabet = new alphabetClass();
     }
   }, {
-    key: 'checkCharacters',
-    value: function checkCharacters() {
+    key: '_checkCharacters',
+    value: function _checkCharacters() {
       var alphabetCharacters = this.alphabet.getCharacters();
       this.characters.forEach(function (character) {
         if (alphabetCharacters.indexOf(character) === -1) {
@@ -46,6 +62,11 @@ var Sequence = function () {
         }
       });
     }
+
+    /**
+     * @return {String} string containing distinct characters of the sequence alphabet
+     */
+
   }, {
     key: 'getAlphabet',
     value: function getAlphabet() {
@@ -56,6 +77,11 @@ var Sequence = function () {
     value: function complement() {
       return '';
     }
+
+    /**
+     * @return {Sequence} new sequence object containing the transcribed characters
+     */
+
   }, {
     key: 'transcribe',
     value: function transcribe() {
@@ -66,6 +92,11 @@ var Sequence = function () {
       console.log(transcribedSequence);
       return new Sequence(transcribedSequence, _RNAAlphabet2.default);
     }
+
+    /**
+     * @return {Sequence} new sequence object containing the transcribed characters
+     */
+
   }, {
     key: 'retrotranscribe',
     value: function retrotranscribe() {
