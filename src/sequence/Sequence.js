@@ -1,22 +1,36 @@
 import DNAAlphabet from '../alphabet/DNAAlphabet';
 import RNAAlphabet from '../alphabet/RNAAlphabet';
 
+/**
+ * Sequence: a string of characters representing a sequence of nucleotides
+ * Usage: let sequence = new Sequence('ACCTGG', DNAAlphabet);
+ *        let transcribed = sequence.transcribe();
+ *        transcribed.sequence;
+ *          => 'ACCUGG'
+ *        transcribed.getAlphabet();
+            => 'ACGU'  // now an RNA strand
+ *
+ */
 class Sequence {
   constructor(sequenceCharacters, alphabetClass){
-    this.setAlphabet(alphabetClass);
+    this._setAlphabet(alphabetClass);
     this.sequence = sequenceCharacters.toUpperCase();
     this.characters = this.sequence.split('');
-    this.checkCharacters();
+    this._checkCharacters();
   }
 
-  setAlphabet(alphabetClass){
+  /**
+   * @param {alphabetClass} Name of Alphabet subclass. One of [DNAAlphabet, RNAAlphabet]
+   * @return {void}
+   */
+  _setAlphabet(alphabetClass){
     if (typeof alphabetClass === 'undefined'){
       alphabetClass = DNAAlphabet;
     }
     this.alphabet = new alphabetClass();
   }
 
-  checkCharacters(){
+  _checkCharacters(){
     let alphabetCharacters = this.alphabet.getCharacters();
     this.characters.forEach(character => {
       if (alphabetCharacters.indexOf(character) === -1){
@@ -25,6 +39,9 @@ class Sequence {
     });
   }
 
+  /**
+   * @return {String} string containing distinct characters of the sequence alphabet
+   */
   getAlphabet(){
     return this.alphabet.getCharacters().join('');
   }
@@ -33,6 +50,9 @@ class Sequence {
     return '';
   }
 
+  /**
+   * @return {Sequence} new sequence object containing the transcribed characters
+   */
   transcribe(){
     if (!(this.alphabet instanceof DNAAlphabet)){
       throw new TypeError('Cannot transcribe non-DNA sequence. (Perhaps you want retrotranscribe?)');
@@ -42,6 +62,9 @@ class Sequence {
     return new Sequence(transcribedSequence, RNAAlphabet);
   }
 
+  /**
+   * @return {Sequence} new sequence object containing the transcribed characters
+   */
   retrotranscribe(){
     if (!(this.alphabet instanceof RNAAlphabet)){
       throw new TypeError('Cannot transcribe non-RNA sequence. (Perhaps you want transcribe?)');

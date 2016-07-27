@@ -1,5 +1,23 @@
 window.esdocSearchIndex = [
   [
+    "bioinformatics/src/alphabet/dnaalphabet.js~dnaalphabet",
+    "class/src/alphabet/DNAAlphabet.js~DNAAlphabet.html",
+    "<span>DNAAlphabet</span> <span class=\"search-result-import-path\">bioinformatics/src/alphabet/DNAAlphabet.js</span>",
+    "class"
+  ],
+  [
+    "bioinformatics/src/alphabet/rnaalphabet.js~rnaalphabet",
+    "class/src/alphabet/RNAAlphabet.js~RNAAlphabet.html",
+    "<span>RNAAlphabet</span> <span class=\"search-result-import-path\">bioinformatics/src/alphabet/RNAAlphabet.js</span>",
+    "class"
+  ],
+  [
+    "bioinformatics/src/sequence/sequence.js~sequence",
+    "class/src/sequence/Sequence.js~Sequence.html",
+    "<span>Sequence</span> <span class=\"search-result-import-path\">bioinformatics/src/sequence/Sequence.js</span>",
+    "class"
+  ],
+  [
     "builtinexternal/ecmascriptexternal.js~array",
     "external/index.html",
     "BuiltinExternal/ECMAScriptExternal.js~Array",
@@ -328,5 +346,119 @@ window.esdocSearchIndex = [
     "external/index.html",
     "BuiltinExternal/WebAPIExternal.js~XMLHttpRequest",
     "external"
+  ],
+  [
+    "src/alphabet/dnaalphabet.js",
+    "file/src/alphabet/DNAAlphabet.js.html",
+    "src/alphabet/DNAAlphabet.js",
+    "file"
+  ],
+  [
+    "src/alphabet/dnaalphabet.js~dnaalphabet#characters",
+    "class/src/alphabet/DNAAlphabet.js~DNAAlphabet.html#instance-member-characters",
+    "src/alphabet/DNAAlphabet.js~DNAAlphabet#characters",
+    "member"
+  ],
+  [
+    "src/alphabet/dnaalphabet.js~dnaalphabet#constructor",
+    "class/src/alphabet/DNAAlphabet.js~DNAAlphabet.html#instance-constructor-constructor",
+    "src/alphabet/DNAAlphabet.js~DNAAlphabet#constructor",
+    "method"
+  ],
+  [
+    "src/alphabet/dnaalphabet.js~dnaalphabet#getcharacters",
+    "class/src/alphabet/DNAAlphabet.js~DNAAlphabet.html#instance-method-getCharacters",
+    "src/alphabet/DNAAlphabet.js~DNAAlphabet#getCharacters",
+    "method"
+  ],
+  [
+    "src/alphabet/dnaalphabet.js~dnaalphabet.name",
+    "class/src/alphabet/DNAAlphabet.js~DNAAlphabet.html#static-method-name",
+    "src/alphabet/DNAAlphabet.js~DNAAlphabet.name",
+    "method"
+  ],
+  [
+    "src/alphabet/rnaalphabet.js",
+    "file/src/alphabet/RNAAlphabet.js.html",
+    "src/alphabet/RNAAlphabet.js",
+    "file"
+  ],
+  [
+    "src/alphabet/rnaalphabet.js~rnaalphabet#characters",
+    "class/src/alphabet/RNAAlphabet.js~RNAAlphabet.html#instance-member-characters",
+    "src/alphabet/RNAAlphabet.js~RNAAlphabet#characters",
+    "member"
+  ],
+  [
+    "src/alphabet/rnaalphabet.js~rnaalphabet#constructor",
+    "class/src/alphabet/RNAAlphabet.js~RNAAlphabet.html#instance-constructor-constructor",
+    "src/alphabet/RNAAlphabet.js~RNAAlphabet#constructor",
+    "method"
+  ],
+  [
+    "src/alphabet/rnaalphabet.js~rnaalphabet#getcharacters",
+    "class/src/alphabet/RNAAlphabet.js~RNAAlphabet.html#instance-method-getCharacters",
+    "src/alphabet/RNAAlphabet.js~RNAAlphabet#getCharacters",
+    "method"
+  ],
+  [
+    "src/alphabet/rnaalphabet.js~rnaalphabet.name",
+    "class/src/alphabet/RNAAlphabet.js~RNAAlphabet.html#static-method-name",
+    "src/alphabet/RNAAlphabet.js~RNAAlphabet.name",
+    "method"
+  ],
+  [
+    "src/sequence/sequence.js",
+    "file/src/sequence/Sequence.js.html",
+    "src/sequence/Sequence.js",
+    "file"
+  ],
+  [
+    "src/sequence/sequence.js~sequence#alphabet",
+    "class/src/sequence/Sequence.js~Sequence.html#instance-member-alphabet",
+    "src/sequence/Sequence.js~Sequence#alphabet",
+    "member"
+  ],
+  [
+    "src/sequence/sequence.js~sequence#characters",
+    "class/src/sequence/Sequence.js~Sequence.html#instance-member-characters",
+    "src/sequence/Sequence.js~Sequence#characters",
+    "member"
+  ],
+  [
+    "src/sequence/sequence.js~sequence#complement",
+    "class/src/sequence/Sequence.js~Sequence.html#instance-method-complement",
+    "src/sequence/Sequence.js~Sequence#complement",
+    "method"
+  ],
+  [
+    "src/sequence/sequence.js~sequence#constructor",
+    "class/src/sequence/Sequence.js~Sequence.html#instance-constructor-constructor",
+    "src/sequence/Sequence.js~Sequence#constructor",
+    "method"
+  ],
+  [
+    "src/sequence/sequence.js~sequence#getalphabet",
+    "class/src/sequence/Sequence.js~Sequence.html#instance-method-getAlphabet",
+    "src/sequence/Sequence.js~Sequence#getAlphabet",
+    "method"
+  ],
+  [
+    "src/sequence/sequence.js~sequence#retrotranscribe",
+    "class/src/sequence/Sequence.js~Sequence.html#instance-method-retrotranscribe",
+    "src/sequence/Sequence.js~Sequence#retrotranscribe",
+    "method"
+  ],
+  [
+    "src/sequence/sequence.js~sequence#sequence",
+    "class/src/sequence/Sequence.js~Sequence.html#instance-member-sequence",
+    "src/sequence/Sequence.js~Sequence#sequence",
+    "member"
+  ],
+  [
+    "src/sequence/sequence.js~sequence#transcribe",
+    "class/src/sequence/Sequence.js~Sequence.html#instance-method-transcribe",
+    "src/sequence/Sequence.js~Sequence#transcribe",
+    "method"
   ]
 ]

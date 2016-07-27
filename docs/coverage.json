@@ -1,6 +1,40 @@
 {
-  "coverage": "0%",
-  "expectCount": 0,
-  "actualCount": 0,
-  "files": {}
+  "coverage": "21.05%",
+  "expectCount": 19,
+  "actualCount": 4,
+  "files": {
+    "src/alphabet/DNAAlphabet.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        10,
+        8,
+        13,
+        4
+      ]
+    },
+    "src/alphabet/RNAAlphabet.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        11,
+        8,
+        14,
+        4
+      ]
+    },
+    "src/sequence/Sequence.js": {
+      "expectCount": 9,
+      "actualCount": 4,
+      "undocumentLines": [
+        30,
+        18,
+        49,
+        15,
+        17
+      ]
+    }
+  }
 }
