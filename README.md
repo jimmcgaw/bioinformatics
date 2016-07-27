@@ -51,8 +51,8 @@ of your DNA. This process of copying the DNA to mRNA is called <em>transcription
 This returns a new Sequence object using the RNAAlphabet. (Remember that in going from DNA to RNA, we
 s/T/U/g in the sequence.)
 
-``` transcribed.sequence
-  => 'AUUGCC' ```
+``` transcribed.sequence ```
+```  => 'AUUGCC' ```
 
 Viruses usually contain RNA instead of DNA contained in a nucleus. Sometimes the RNA manipulates the DNA in
 other organisms. For example, the HIV virus alters DNA in human cells via RNA injected into the cells. In the
