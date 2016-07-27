@@ -63,8 +63,8 @@ dogma, DNA -> RNA. This process is the reverse. This is the reason that HIV is c
 
 ``` let retrotranscribed = seq.retrotranscribe(); ```
 
-``` retrotranscribed.sequence
-  => 'ATTGCC' ```
+``` retrotranscribed.sequence ```
+```  => 'ATTGCC' ```
 
 Trying to `transcribe` an RNA sequence or `retrotranscribe` a DNA sequence will result in a `TypeError` being
 thrown.
