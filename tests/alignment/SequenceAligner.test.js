@@ -12,10 +12,8 @@ describe('SequenceAligner', function() {
       aligner = new SequenceAligner(seq1, seq2);
     });
 
-    it('initTable', function () {
-      aligner.initTable();
-      expect(aligner.table.length).to.equal(seq1.length+1);
-      expect(aligner.table[0].length).to.equal(seq2.length+1);
+    it('throws an error if either sequence has zero length', function () {
+
     });
   });
 });

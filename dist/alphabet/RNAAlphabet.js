@@ -42,6 +42,16 @@ var RNAAlphabet = function (_Alphabet) {
     value: function getCharacters() {
       return this.characters;
     }
+  }, {
+    key: 'getComplementHash',
+    value: function getComplementHash() {
+      return {
+        'A': 'U',
+        'U': 'A',
+        'C': 'G',
+        'G': 'C'
+      };
+    }
   }]);
 
   return RNAAlphabet;

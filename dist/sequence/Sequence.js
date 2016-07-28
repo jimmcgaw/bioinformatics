@@ -75,7 +75,10 @@ var Sequence = function () {
   }, {
     key: 'complement',
     value: function complement() {
-      return '';
+      var complementHash = this.alphabet.getComplementHash();
+      return this.characters.map(function (character) {
+        return complementHash[character];
+      }).join('');
     }
 
     /**
@@ -89,7 +92,6 @@ var Sequence = function () {
         throw new TypeError('Cannot transcribe non-DNA sequence. (Perhaps you want retrotranscribe?)');
       }
       var transcribedSequence = this.sequence.replace(/T/g, 'U');
-      console.log(transcribedSequence);
       return new Sequence(transcribedSequence, _RNAAlphabet2.default);
     }
 

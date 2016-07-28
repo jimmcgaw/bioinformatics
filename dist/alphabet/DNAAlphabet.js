@@ -42,6 +42,16 @@ var DNAAlphabet = function (_Alphabet) {
     value: function getCharacters() {
       return this.characters;
     }
+  }, {
+    key: 'getComplementHash',
+    value: function getComplementHash() {
+      return {
+        'A': 'T',
+        'T': 'A',
+        'C': 'G',
+        'G': 'C'
+      };
+    }
   }]);
 
   return DNAAlphabet;
